@@ -1,0 +1,73 @@
+:root {
+  /* Font Family */
+  --font-sans: "Josefin Sans", sans-serif;
+
+  /* Font Size */
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-40: 2.5rem;
+  --fs-64: 4rem;
+
+  /* Line Height */
+  --lh-100: 100%;
+  --lh-110: 110%;
+  --lh-155: 155%;
+  --lh-215: 215%;
+
+  /* Letter Spacing */
+  --ls-0: 0px;
+  --ls-10: 10px;
+  --ls-17: 17.5px;
+}
+
+.text-preset-1 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-64);
+  line-height: var(--lh-100);
+  letter-spacing: var(--ls-17);
+}
+
+.text-preset-1-bold {
+  font-family: var(--font-sans);
+  font-size: var(--fs-64);
+  line-height: var(--lh-100);
+  letter-spacing: var(--ls-17);
+  font-weight: bold;
+}
+
+.text-preset-2 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-40);
+  line-height: var(--lh-100);
+  letter-spacing: var(--ls-10);
+}
+
+.text-preset-2-bold {
+  font-family: var(--font-sans);
+  font-size: var(--fs-40);
+  line-height: var(--lh-100);
+  letter-spacing: var(--ls-10);
+  font-weight: bold;
+}
+
+.text-preset-3 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-16);
+  line-height: var(--lh-215);
+  letter-spacing: var(--ls-0);
+}
+
+.text-preset-4 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-14);
+  line-height: var(--lh-155);
+  letter-spacing: var(--ls-0);
+}
+
+.text-preset-5 {
+  font-family: var(--font-sans);
+  font-size: var(--fs-13);
+  line-height: var(--lh-215);
+  letter-spacing: var(--ls-0);
+}
