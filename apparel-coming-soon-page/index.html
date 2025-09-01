@@ -2,9 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/favicon-32x32.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/assets/favicon-32x32.png"
+    />
+    <title>Base Apparel</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./src/reset.css" />
@@ -18,9 +27,49 @@
     />
   </head>
   <body>
-    <div id="app"></div>
-
-    <h1 class="text-preset-1">Domabmdi jcb edbi</h1>
+    <header>
+      <div class="header-logo">
+        <img src="./src/assets/logo.svg" alt="Base Apparel Logo" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="hero-banner">
+          <picture
+            ><source
+              srcset=".\src\assets\hero-desktop.jpg"
+              media="(width >= 600px)" />
+            <img src="./src/assets/hero-mobile.jpg" alt="MDN"
+          /></picture>
+        </div>
+      </section>
+      <!-- ---- -->
+      <section>
+        <article>
+          <div class="heading">
+            <h1 class="heading__main">
+              We're<span class="heading__highlight">coming soon</span>
+            </h1>
+          </div>
+          <p class="description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </article>
+        <article>
+          <form class="newsletter">
+            <label for="newsletter-input">
+              <input type="text" name="Newsletter" id="newsletter-input" />
+            </label>
+            <p class="validation-message"></p>
+            <button>
+              <img src="./src/assets/icon-arrow.svg" alt="Submit button" />
+            </button>
+          </form>
+        </article>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
