@@ -41,6 +41,7 @@
   font-size: var(--fs-40);
   line-height: var(--lh-100);
   letter-spacing: var(--ls-10);
+  font-weight: 300;
 }
 
 .text-preset-2-bold {

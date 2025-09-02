@@ -28,30 +28,36 @@
   </head>
   <body>
     <header>
-      <div class="header-logo">
-        <img src="./src/assets/logo.svg" alt="Base Apparel Logo" />
+      <div class="logo-container">
+        <img class="logo" src="./src/assets/logo.svg" alt="Base Apparel Logo" />
       </div>
     </header>
     <main>
       <section>
-        <div class="hero-banner">
+        <div class="hero-container">
           <picture
             ><source
-              srcset=".\src\assets\hero-desktop.jpg"
-              media="(width >= 600px)" />
-            <img src="./src/assets/hero-mobile.jpg" alt="MDN"
+              srcset=".\src\assets\hero-desktop.png"
+              media="(width >= 768px)" />
+            <img
+              class="hero-banner"
+              src="./src/assets/hero-mobile.png"
+              alt="A young girl posing"
           /></picture>
         </div>
       </section>
       <!-- ---- -->
-      <section>
+      <section class="main-section">
         <article>
           <div class="heading">
-            <h1 class="heading__main">
-              We're<span class="heading__highlight">coming soon</span>
+            <h1 class="heading__main text-preset-2">
+              We're
+              <span class="heading__highlight text-preset-2-bold"
+                >coming soon</span
+              >
             </h1>
           </div>
-          <p class="description">
+          <p class="description text-preset-3">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
@@ -59,13 +65,22 @@
         </article>
         <article>
           <form class="newsletter">
-            <label for="newsletter-input">
-              <input type="text" name="Newsletter" id="newsletter-input" />
+            <label class="newsletter__label" for="input">
+              <input
+                class="newsletter__input text-preset-3"
+                type="text"
+                placeholder="Email Address"
+                name="Newsletter"
+                id="input"
+              />
+              <button class="button" type="submit">
+                <img src="./src/assets/icon-arrow.svg" alt="Submit button" />
+              </button>
             </label>
-            <p class="validation-message">Please provide a valid email</p>
-            <button>
-              <img src="./src/assets/icon-arrow.svg" alt="Submit button" />
-            </button>
+
+            <p class="validation-message text-preset-5">
+              Please provide a valid email
+            </p>
           </form>
         </article>
       </section>

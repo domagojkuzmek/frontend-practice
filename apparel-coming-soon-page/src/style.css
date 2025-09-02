@@ -1,0 +1,79 @@
+:root {
+  --pink: #ce9898;
+  --red: #f96464;
+  --black: #000000;
+}
+
+/* Header styles */
+.logo-container {
+  width: 100%;
+  padding: 2rem;
+}
+.logo {
+  width: 110px;
+}
+/* Banner styles */
+.hero-banner {
+  width: 100%;
+}
+/* Main heading content styles */
+.main-section {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.heading__main {
+  color: var(--pink);
+}
+
+.heading__highlight {
+  color: var(--black);
+}
+
+.description {
+  color: var(--pink);
+  margin-bottom: 2rem;
+}
+/* Form styles */
+.button {
+  cursor: pointer;
+  width: 5.4rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #f8bfbf, #ee8b8b);
+  transform: scale(110%);
+}
+.button img {
+  transform: translateX(250%);
+}
+
+.newsletter__label {
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newsletter__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+
+.validation-message {
+  color: var(--red);
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
